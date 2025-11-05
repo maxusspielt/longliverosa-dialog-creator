@@ -43,11 +43,11 @@
     }
 </style>
 
-<PageTitle>Dialog Creator</PageTitle>
+<PageTitle>Dialog Createur</PageTitle>
 <div style="margin: 2rem 0 2rem 2rem;padding-top:1rem;background:none">
 
     <RadzenStack Orientation="Orientation.Horizontal" Style="margin-bottom:2rem">
-        <h1>Dialog Creator</h1>
+        <h1>Dialog Createur</h1>
         <RadzenButton Text="Speakers" Click="OpenSpeakerDialog" />
         <RadzenUpload class="upload" ChooseText="Import json" Url="uploadjson" Accept=".json" Auto="true" Multiple="false" InputAttributes="@(new Dictionary<string, object>() { { "aria-label", "select file" } })"
                       Style="width: 10%" Complete=@((callback) => ImportJsonFile(callback.RawResponse.Split(":")[1].TrimEnd('}').Trim('"')))>
